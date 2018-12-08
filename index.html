@@ -1,384 +1,75 @@
-<!DOCTYPE html>
-<html lang="mx">
-<head>
-    <!-- META INFO
-    ================================================== -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Cache-control" content="cache, max-age:604800">
-    <meta name="robots" content="index, follow">
-    <meta name="bingbot" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-    <meta name="copyright" content="Copyright © 2018">
-
-    <!-- FAVICONS
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- GOOGLE ANALYTICS & ADWORDS
-    ================================================== -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130556932-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-130556932-1');
-    </script>
-
-    <!-- BING UET TAG
-    ================================================== -->
-    <script>
-    (function (w, d, t, r, u) {var f, n, i; w[u] = w[u] || [], f = function () {
-            var o = {ti: "25021662"}; o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad")
-        }, n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function () {
-            var s = this.readyState;
-            s && s !== "loaded" && s !== "complete" || (f(), n.onload = n.onreadystatechange = null)
-        }, i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i)
-    })(window, document, "script", "//bat.bing.com/bat.js", "uetq");
-    </script>
-
-    <!-- FACEBOOK PIXEL
-    ================================================== -->
-	<script>
-	  !function(f,b,e,v,n,t,s)
-	  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-	  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-	  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-	  n.queue=[];t=b.createElement(e);t.async=!0;
-	  t.src=v;s=b.getElementsByTagName(e)[0];
-	  s.parentNode.insertBefore(t,s)}(window, document,'script',
-	  'https://connect.facebook.net/en_US/fbevents.js');
-	  fbq('init', '248871415811338');
-      fbq('track', 'PageView');
-      fbq('init', '1793113547655995');
-      fbq('track', 'PageView');
-	</script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=248871415811338&ev=PageView&noscript=1" /></noscript>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1793113547655995&ev=PageView&noscript=1"/></noscript>
-
-    <!-- TWITTER TAG
-    ================================================== -->
-    <script>
-    !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
-    },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
-    a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
-    twq('init','o0fef');
-    twq('track','PageView');
-    </script>
-
-    <!-- LINKEDIN TAG
-    ================================================== -->
-    <script type="text/javascript">
-    _linkedin_partner_id = "389209";
-    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-    </script><script type="text/javascript">
-    (function(){var s = document.getElementsByTagName("script")[0];
-    var b = document.createElement("script");
-    b.type = "text/javascript";b.async = true;
-    b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-    s.parentNode.insertBefore(b, s);})();
-    </script>
-    <noscript>
-    <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=389209&fmt=gif" />
-    </noscript> 
-
-    <!-- TITLE
-    ================================================== -->
-    <title>Tarjetas de Presentación Interactivas | RA CAM</title>
-
-    <!-- SEO INFO
-    ================================================== -->
-    <meta name="description" content="Dale vida a tus tarjetas de presentación gracias a la realidad aumentada. Muestra más información de tu empresa y todos tus datos de contacto de una manera interactiva.">
-    <meta name="keywords" content="tarjetas de presentacion, diseño de tarjetas de presentacion, tarjetas de presentacion creativas, tarjetas de presentacion elegantes, tarjetas presentacion abogados, tarjetas de presentacion modernas, tarjetas de presentacion originales">
-    <meta name="author" content="Illutio">
-
-    <!-- SOCIAL TAGS
-    ================================================== -->
-    <meta property="og:image:height" content="1257">
-    <meta property="og:image:width" content="2400">
-    <meta property="og:description" content="Dale vida a tus tarjetas de presentaci&oacute;n gracias a la realidad aumentada. Muestra m&aacute;s informaci&oacute;n de tu empresa y todos tus datos de contacto de una manera interactiva.">
-    <meta property="og:title" content="Tarjetas de Presentaci&oacute;n Interactivas | RA CAM">
-    <meta property="og:url" content="https://illut.io/tarjetas-presentacion">
-    <meta property="og:image" content="https://illut.io/tarjetas-presentacion/assets/img/og-image.png/og-image.jpg">
-
-    <!-- STYLESHEETS
-    ================================================== -->
-    <link href="css/ra-cam.css" rel="stylesheet">
-</head>
-<body>
-<!-- INTRO
-================================================== -->
-<section class="hero d-flex align-items-center home-section">
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-12 col-md-6">
-                <img src="assets/img/racam-logo.png" alt="racam-logo" class="w-50 mb-4">
-                <p class="lead mb-4">Dale vida a tus tarjetas de presentación con realidad aumentada. Muestra todos tus datos de contacto de una forma interactiva e impresiona a tus prospectos.</p>
-                <div class="row justify-content-center">
-                    <div class="col">
-                        <a href="#benefits-section">
-                            <button class="btn btn-white-outline px-5 btn-lg btn-block">Conoce más</button>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#contact-form">
-                            <button class="btn btn-white-outline px-5 btn-lg btn-block">Comprar ahora</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!DOCTYPE html><html lang=mx><head><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><meta http-equiv=X-UA-Compatible content="ie=edge"><meta http-equiv=Cache-control content="cache, max-age:604800"><meta name=robots content="index, follow"><meta name=bingbot content="index, follow"><meta name=googlebot content="index, follow"><meta name=copyright content="Copyright © 2018"><link rel=apple-touch-icon sizes=180x180 href=/favicons/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicons/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicons/favicon-16x16.png><link rel=manifest href=/favicons/site.webmanifest><link rel=mask-icon href=/favicons/safari-pinned-tab.svg color=#5bbad5><link rel="shortcut icon" href=/favicons/favicon.ico><meta name=msapplication-TileColor content=#ffffff><meta name=msapplication-config content=/favicons/browserconfig.xml><meta name=theme-color content=#ffffff>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130556932-1"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","UA-130556932-1");</script>
+<script>(function(a,j,e,g,b){var h,k,c;a[b]=a[b]||[],h=function(){var d={ti:"25021662"};d.q=a[b],a[b]=new UET(d),a[b].push("pageLoad");},k=j.createElement(e),k.src=g,k.async=1,k.onload=k.onreadystatechange=function(){var d=this.readyState;d&&d!=="loaded"&&d!=="complete"||(h(),k.onload=k.onreadystatechange=null);},c=j.getElementsByTagName(e)[0],c.parentNode.insertBefore(k,c);})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+<script>!function(h,a,i,c,j,d,g){if(h.fbq){return;}j=h.fbq=function(){j.callMethod?j.callMethod.apply(j,arguments):j.queue.push(arguments);};if(!h._fbq){h._fbq=j;}j.push=j;j.loaded=!0;j.version="2.0";j.queue=[];d=a.createElement(i);d.async=!0;d.src=c;g=a.getElementsByTagName(i)[0];g.parentNode.insertBefore(d,g);}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","248871415811338");fbq("track","PageView");fbq("init","1793113547655995");fbq("track","PageView");</script>
+<noscript><img height=1 width=1 style=display:none src="https://www.facebook.com/tr?id=248871415811338&ev=PageView&noscript=1" /></noscript>
+<noscript><img height=1 width=1 style=display:none src="https://www.facebook.com/tr?id=1793113547655995&ev=PageView&noscript=1"/></noscript>
+<script>!function(g,d,h,f,c,b){g.twq||(f=g.twq=function(){f.exe?f.exe.apply(f,arguments):f.queue.push(arguments);},f.version="1.1",f.queue=[],c=d.createElement(h),c.async=!0,c.src="//static.ads-twitter.com/uwt.js",b=d.getElementsByTagName(h)[0],b.parentNode.insertBefore(c,b));}(window,document,"script");twq("init","o0fef");twq("track","PageView");</script>
+<script type=text/javascript>_linkedin_partner_id="389209";window._linkedin_data_partner_ids=window._linkedin_data_partner_ids||[];window._linkedin_data_partner_ids.push(_linkedin_partner_id);</script><script type=text/javascript>(function(){var c=document.getElementsByTagName("script")[0];var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src="https://snap.licdn.com/li.lms-analytics/insight.min.js";c.parentNode.insertBefore(a,c);})();</script>
+<noscript>
+<img height=1 width=1 style=display:none alt src="https://dc.ads.linkedin.com/collect/?pid=389209&fmt=gif" />
+</noscript><title>Tarjetas de Presentación Interactivas | RA CAM</title><meta name=description content="Dale vida a tus tarjetas de presentación gracias a la realidad aumentada. Muestra más información de tu empresa y todos tus datos de contacto de una manera interactiva."><meta name=keywords content="tarjetas de presentacion, diseño de tarjetas de presentacion, tarjetas de presentacion creativas, tarjetas de presentacion elegantes, tarjetas presentacion abogados, tarjetas de presentacion modernas, tarjetas de presentacion originales"><meta name=author content=Illutio><meta property=og:image:height content=1257><meta property=og:image:width content=2400><meta property=og:description content="Dale vida a tus tarjetas de presentaci&oacute;n gracias a la realidad aumentada. Muestra m&aacute;s informaci&oacute;n de tu empresa y todos tus datos de contacto de una manera interactiva."><meta property=og:title content="Tarjetas de Presentaci&oacute;n Interactivas | RA CAM"><meta property=og:url content=https://illut.io/tarjetas-presentacion><meta property=og:image content=https://illut.io/tarjetas-presentacion/assets/img/og-image.png/og-image.jpg><link href=css/ra-cam.css rel=stylesheet></head><body>
+<section class="hero d-flex align-items-center home-section"><div class=container><div class="row mt-5"><div class="col-12 col-md-6">
+<img src=assets/img/racam-logo.png alt=racam-logo class="w-50 mb-4"><p class="lead mb-4">Dale vida a tus tarjetas de presentación con realidad aumentada. Muestra todos tus datos de contacto de una forma interactiva e impresiona a tus prospectos.</p><div class="row justify-content-center"><div class=col>
+<a href=#benefits-section>
+<button class="btn btn-white-outline px-5 btn-lg btn-block">Conoce más</button>
+</a></div><div class=col>
+<a href=#contact-form>
+<button class="btn btn-white-outline px-5 btn-lg btn-block">Comprar ahora</button>
+</a></div></div></div></div></div>
 </section>
-
-
-<!-- BENEFITS
-================================================== -->
-<section class="d-flex align-items-center benefits-section my-5" id="benefits-section">
-    <div class="container">
-        <div class="row justify-content-center mb-3">
-            <div class="col-12 text-center">
-                <h3 class="mb-3">Beneficios de RA CAM</h3>
-                <p class="light-text">Las empresas que utilizan realidad aumentada obtienen beneficios como:</p>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-3 text-center">
-                <img src="assets/img/racam-1.png" alt="racam" class="img-fluid mb-4">
-                <h6>Mejorar el engagement</h6>
-                <p>Establece contacto 1 a 1 y contruye una profunda lealtad a la marca.</p>
-            </div>
-            <div class="col-12 col-md-3 text-center">
-                <img src="assets/img/racam-2.png" alt="racam" class="img-fluid mb-2">
-                <h6>Incrementar ventas</h6>
-                <p>Genera tráfico a punto de venta con acciones directas de compra.</p>
-            </div>
-            <div class="col-12 col-md-3 text-center">
-                <img src="assets/img/racam-3.png" alt="racam" class="img-fluid mb-2">
-                <h6>Mejorar el ROI en publicidad</h6>
-                <p>Incrementando tasas de conversión.</p>
-            </div>
-            <div class="col-12 col-md-3 text-center">
-                <img src="assets/img/racam-4.png" alt="racam" class="img-fluid mb-2">
-                <h6>Adquirir prospectos más calificados</h6>
-                <p>Genera relaciones cercanas con personas más probables a comprar.</p>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-6 col-lg-4">
-                <a href="#contact-form">
-                    <button class="btn btn-racam-outline btn-block btn-lg">Compra ahora</button>
-                </a>
-            </div>
-        </div>
-    </div>
+<section class="d-flex align-items-center benefits-section my-5" id=benefits-section><div class=container><div class="row justify-content-center mb-3"><div class="col-12 text-center"><h3 class=mb-3>Beneficios de RA CAM</h3><p class=light-text>Las empresas que utilizan realidad aumentada obtienen beneficios como:</p></div></div><div class="row justify-content-center"><div class="col-12 col-md-3 text-center">
+<img src=assets/img/racam-1.png alt=racam class="img-fluid mb-4"><h6>Mejorar el engagement</h6><p>Establece contacto 1 a 1 y contruye una profunda lealtad a la marca.</p></div><div class="col-12 col-md-3 text-center">
+<img src=assets/img/racam-2.png alt=racam class="img-fluid mb-2"><h6>Incrementar ventas</h6><p>Genera tráfico a punto de venta con acciones directas de compra.</p></div><div class="col-12 col-md-3 text-center">
+<img src=assets/img/racam-3.png alt=racam class="img-fluid mb-2"><h6>Mejorar el ROI en publicidad</h6><p>Incrementando tasas de conversión.</p></div><div class="col-12 col-md-3 text-center">
+<img src=assets/img/racam-4.png alt=racam class="img-fluid mb-2"><h6>Adquirir prospectos más calificados</h6><p>Genera relaciones cercanas con personas más probables a comprar.</p></div></div><div class="row justify-content-center"><div class="col-12 col-md-6 col-lg-4">
+<a href=#contact-form>
+<button class="btn btn-racam-outline btn-block btn-lg">Compra ahora</button>
+</a></div></div></div>
+</section><div id=tryout data-property="{videoURL:'https://youtu.be/OQUo327SZpE',containment:'section.tryout',autoPlay:true, mute:true, startAt:0, opacity:1, loop:true, useOnMobile:true, showControls:false}"></div>
+<section class="tryout align-items-center d-flex py-5"><div class="container py-4"><div class="row justify-content-center mb-3"><div class="col-12 col-md-10 col-lg-8 text-center"><h3 class=mb-3>Vive la RA</h3><p class=light-text>Al escanear tu tarjeta de presentación tus prospectos podrán visualizar videos, animaciones 3D o vendedores virtuales que expliquen en qué consiste tu negocio e inviten a tomar acción.</p></div></div><div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8 text-center mb-3"><p class=lead>· Descarga RA CAM · Escanea tu tarjeta · Desbloquea contenido interactivo · Da click en el botón Call-to-Action ·</p></div><div class="col-12 col-md-8 col-lg-6 text-center"><div class="row justify-content-center align-items-center d-flex"><div class="col col-md-5">
+<a href='https://itunes.apple.com/mx/app/ra-cam/id1349482894?l=en&mt=8&utm_source=cpc&utm_campaign=Tarjetas+Presentacion+Interactivas&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target=_blank>
+<img src=assets/img/app-store-badge.png alt=app-store-badge class=w-100>
+</a></div><div class="col d-none d-md-flex"></div><div class="col col-md-5">
+<a href='https://play.google.com/store/apps/details?id=com.illutio.realidadaumentada&utm_source=cpc&utm_campaign=Tarjetas+Presentacion+Interactivas&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target=_blank>
+<img src=assets/img/google-play-badge.png alt=google-play-badge class=w-100>
+</a></div></div></div></div></div>
 </section>
-
-
-<!-- TRY OUT
-================================================== -->
-<div id="tryout" data-property="{videoURL:'https://youtu.be/OQUo327SZpE',containment:'section.tryout',autoPlay:true, mute:true, startAt:0, opacity:1, loop:true, useOnMobile:true, showControls:false}"></div>
-<section class="tryout align-items-center d-flex py-5">
-    <div class="container py-4">
-        <div class="row justify-content-center mb-3">
-            <div class="col-12 col-md-10 col-lg-8 text-center">
-                <h3 class="mb-3">Vive la RA</h3>
-                <p class="light-text">Al escanear tu tarjeta de presentación tus prospectos podrán visualizar videos, animaciones 3D o vendedores virtuales que expliquen en qué consiste tu negocio e inviten a tomar acción.</p>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8 text-center mb-3">
-                <p class="lead">· Descarga RA CAM · Escanea tu tarjeta · Desbloquea contenido interactivo · Da click en el botón Call-to-Action ·</p>
-            </div>
-            <div class="col-12 col-md-8 col-lg-6 text-center">
-                <div class="row justify-content-center align-items-center d-flex">
-                    <div class="col col-md-5">
-                        <a href='https://itunes.apple.com/mx/app/ra-cam/id1349482894?l=en&mt=8&utm_source=cpc&utm_campaign=Tarjetas+Presentacion+Interactivas&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank">
-                            <img src="assets/img/app-store-badge.png" alt="app-store-badge" class="w-100">
-                        </a>
-                    </div>
-                    <div class="col d-none d-md-flex"></div>
-                    <div class="col col-md-5">
-                        <a href='https://play.google.com/store/apps/details?id=com.illutio.realidadaumentada&utm_source=cpc&utm_campaign=Tarjetas+Presentacion+Interactivas&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank">
-                            <img src="assets/img/google-play-badge.png" alt="google-play-badge" class="w-100">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<section class="d-flex align-items-center clients my-5"><div class="container py-4"><div class="row justify-content-center mb-3"><div class="col-12 text-center"><h3 class=mb-3>Empresas en RA CAM</h3></div></div><div class="row justify-content-center"><div class="col-12 col-md-10 col-lg-8"><div class="row justify-content-center align-items-center">
+<img src=assets/clients/hn_logo-el-pais-negro.png alt class="w-100 col-6 col-md-3">
+<img src=assets/clients/Logo_BA_Aplicacin_Roja-01.jpg alt class="w-100 col-6 col-md-3">
+<img src=assets/clients/Superbrands-logo.jpg alt class="w-100 col-6 col-md-3">
+<img src=assets/clients/logo-banco-de-occidente.jpg alt class="w-100 col-6 col-md-3"></div><div class="row justify-content-center align-items-center mb-4">
+<img src=assets/clients/Herbalife-s-new-personalised-nutrition-programme-Gene-Start-debuts-in-South-Korea_wrbm_large.png alt class="w-100 col-6 col-md-3">
+<img src=assets/clients/2000px-Coca-Cola_logo.png alt class="w-100 col-6 col-md-3">
+<img src=assets/clients/unitec.png alt class="w-100 col-6 col-md-3">
+<img src=assets/clients/tropical.png alt class="w-100 col-6 col-md-3"></div><div class="row justify-content-center align-items-center">
+<img src=assets/clients/1200px-Claro.png alt class="w-100 col-4 col-md-2"><div class="d-none d-md-block col-md-1"></div>
+<img src=assets/clients/qualitas.svg alt class="w-100 col-4 col-md-2"><div class="d-none d-md-block col-md-1"></div>
+<img src=assets/clients/1200px-Mitsubishi_motors_new_logo.png alt class="w-100 col-4 col-md-2"></div></div></div></div>
 </section>
-
-
-<!-- CLIENTS
-================================================== -->
-<section class="d-flex align-items-center clients my-5">
-    <div class="container py-4">
-        <div class="row justify-content-center mb-3">
-            <div class="col-12 text-center">
-                <h3 class="mb-3">Empresas en RA CAM</h3>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8">
-                <div class="row justify-content-center align-items-center">
-                    <img src="assets/clients/hn_logo-el-pais-negro.png" alt="" class="w-100 col-6 col-md-3">
-                    <img src="assets/clients/Logo_BA_Aplicacin_Roja-01.jpg" alt="" class="w-100 col-6 col-md-3">
-                    <img src="assets/clients/Superbrands-logo.jpg" alt="" class="w-100 col-6 col-md-3">
-                    <img src="assets/clients/logo-banco-de-occidente.jpg" alt="" class="w-100 col-6 col-md-3">
-                </div>
-                <div class="row justify-content-center align-items-center mb-4">
-                    <img src="assets/clients/Herbalife-s-new-personalised-nutrition-programme-Gene-Start-debuts-in-South-Korea_wrbm_large.png"
-                        alt="" class="w-100 col-6 col-md-3">
-                    <img src="assets/clients/2000px-Coca-Cola_logo.png" alt="" class="w-100 col-6 col-md-3">
-                    <img src="assets/clients/unitec.png" alt="" class="w-100 col-6 col-md-3">
-                    <img src="assets/clients/tropical.png" alt="" class="w-100 col-6 col-md-3">
-                </div>
-                <div class="row justify-content-center align-items-center">
-                    <img src="assets/clients/1200px-Claro.png" alt="" class="w-100 col-4 col-md-2">
-                    <div class="d-none d-md-block col-md-1"></div>
-                    <img src="assets/clients/qualitas.svg" alt="" class="w-100 col-4 col-md-2">
-                    <div class="d-none d-md-block col-md-1"></div>
-                    <img src="assets/clients/1200px-Mitsubishi_motors_new_logo.png" alt="" class="w-100 col-4 col-md-2">
-                </div>
-            </div>
-        </div>
-    </div>
+<section class="hero d-flex align-items-center contact-form py-4" id=contact-form><div class=container><div class="row justify-content-center mb-3"><div class="col-12 text-center"><h3 class=mb-3>Contáctanos</h3><p class=light-text>Cotiza tu tarjeta de presentación.</p></div></div><div class="row justify-content-center"><div class="col-12 col-md-8 col-lg-6"><form action=https://formspree.io/mezdejwx method=POST><div class=form-row><div class="form-group col-12 col-md-6">
+<label for=nombre>Nombre *</label>
+<input type=text class=form-control id=nombre name=Nombre data-validator=required|min:1|max:30 data-validator-label=Nombre><div class=form-control-feedback></div></div><div class="form-group col-12 col-md-6">
+<label for=correo>Correo *</label>
+<input type=email name=_replyto id=_replyto class=form-control data-validator=required|email data-validator-label=Correo><div class=form-control-feedback></div></div></div><div class=form-row><div class="form-group col-12 col-md-6">
+<label for=titulo-puesto>Título/Puesto *</label>
+<input type=text class=form-control id=titulo-puesto name=Título/Puesto data-validator=required|min:1|max:30 data-validator-label=Titulo><div class=form-control-feedback></div></div><div class="form-group col-12 col-md-6">
+<label for=Teléfono>Teléfono</label>
+<input type=phone class=form-control name=Teléfono></div></div><div class=form-row><div class="form-group col-12 col-md-6">
+<label for=puesto>Estado</label>
+<input type=text class=form-control name=Estado></div><div class="form-group col-12 col-md-6">
+<label for=puesto>Ciudad</label>
+<input type=text class=form-control name=Ciudad></div></div><div style=height:2rem;width:100%></div>
+<input type=hidden name=_next value=confirmacion.html>
+<input type=submit id=submit value=Enviar class="btn btn-white-outline btn-block" disabled></form></div></div></div><div class="container footer"><div class="row justify-content-between"><div class="col-12 col-md-6"><p>&copy; 2018 RA CAM. Todos los derechos reservados.</p></div><div class="col-12 col-md-6 text-right"><p class=text-right>Powered by <a href=https://iconica.mx target=_blank rel=author title=iconica-studio>Iconica Studio</a> & <a href=https://illut.io target=_blank rel=author title=illutio>Illutio.</a></p></div></div></div>
 </section>
-
-
-<!-- FORM
-================================================== -->
-<section class="hero d-flex align-items-center contact-form py-4" id="contact-form">
-    <div class="container">
-        <div class="row justify-content-center mb-3">
-            <div class="col-12 text-center">
-                <h3 class="mb-3">Contáctanos</h3>
-                <p class="light-text">Cotiza tu tarjeta de presentación.</p>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-8 col-lg-6">
-                <form action="https://formspree.io/mezdejwx" method="POST">
-                    <div class="form-row">
-                        <div class="form-group col-12 col-md-6">
-                            <label for="nombre">Nombre *</label>
-                            <input type="text" class="form-control" id="nombre" name="Nombre" data-validator="required|min:1|max:30" data-validator-label="Nombre">
-                            <div class="form-control-feedback"></div>
-                        </div>
-                        <div class="form-group col-12 col-md-6">
-                            <label for="correo">Correo *</label>
-                            <input type="email" name="_replyto" id="_replyto" class="form-control" data-validator="required|email" data-validator-label="Correo">
-                            <div class="form-control-feedback"></div>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-12 col-md-6">
-                            <label for="titulo-puesto">Título/Puesto *</label>
-                            <input type="text" class="form-control" id="titulo-puesto" name="Título/Puesto" data-validator="required|min:1|max:30" data-validator-label="Titulo">
-                            <div class="form-control-feedback"></div>
-                        </div>
-                        <div class="form-group col-12 col-md-6">
-                            <label for="Teléfono">Teléfono</label>
-                            <input type="phone" class="form-control" name="Teléfono">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-12 col-md-6">
-                            <label for="puesto">Estado</label>
-                            <input type="text" class="form-control" name="Estado">
-                        </div>
-                        <div class="form-group col-12 col-md-6">
-                            <label for="puesto">Ciudad</label>
-                            <input type="text" class="form-control" name="Ciudad">
-                        </div>
-                    </div>
-                    <div style="height:2rem; width:100%;"></div>
-                    <input type="hidden" name="_next" value="confirmacion.html">
-                    <input type="submit" id="submit" value="Enviar" class="btn btn-white-outline btn-block" disabled>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="container footer">
-        <div class="row justify-content-between">
-            <div class="col-12 col-md-6">
-                <p>&copy; 2018 RA CAM. Todos los derechos reservados.</p>
-            </div>
-            <div class="col-12 col-md-6 text-right">
-                <p class="text-right">Powered by <a href="https://iconica.mx" target="_blank" rel="author" title="iconica-studio">Iconica Studio</a> & <a href="https://illut.io" target="_blank" rel="author" title="illutio">Illutio.</a></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- SCRIPTS
-================================================== -->
-<script src="/node_modules/jquery/dist/jquery.min.js"></script>
-<script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
-<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="/node_modules/jquery-form-validation/dist/jquery.form-validation.min.js"></script>
-<script src="/node_modules/jquery.mb.YTPlayer-master/dist/jquery.mb.YTPlayer.min.js"></script>
-<script src="/node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-<script src="/node_modules/wowjs/dist/wow.min.js"></script>
-<script>
-// WOW JS
-// ------------------------------->
-var wow = new WOW({
-    offset: -10,
-    mobile: false
-});
-
-// SMOOTH SCROLL
-// ------------------------------->
-var smoothScroll = new SmoothScroll('a[href*="#"]', {
-    speed: 1000,
-    easing: 'easeInOutQuart'
-});
-
-// DOCUMENT READY
-// ------------------------------->
-$(document).ready(function () {
-    $("p").addClass("wow fadeInUp");
-    $("h6").addClass("wow fadeInUp");
-    $("h5").addClass("wow fadeInUp");
-    $("h4").addClass("wow fadeInUp");
-    $("h3").addClass("wow fadeInUp");
-    $("h2").addClass("wow fadeInUp");
-    $("h1").addClass("wow fadeInUp");
-    $("button").addClass("wow fadeInUp");
-    $("form").addClass("wow fadeIn");
-    $("img").addClass("wow fadeIn");
-    wow.init();
-    $("#tryout").YTPlayer();
-});
-
-// FORM VALIDATION
-// ------------------------------->
-$(document).on('blur', '[data-validator]', function () {
-    new Validator($(this), {
-        language : {
-            required: 'Éste campo es requerido.',
-            email: 'Ingresa un correo válido.',
-        }
-    });
-
-    if($('#nombre').hasClass("is-valid") && $('#_replyto').hasClass("is-valid") && $('#titulo-puesto').hasClass("is-valid")){
-        $('#submit').removeAttr("disabled", "disabled");
-    }
-});
-</script>
-</body>
-</html>
+<script src=/node_modules/jquery/dist/jquery.min.js></script>
+<script src=/node_modules/popper.js/dist/umd/popper.min.js></script>
+<script src=/node_modules/bootstrap/dist/js/bootstrap.min.js></script>
+<script src=/node_modules/jquery-form-validation/dist/jquery.form-validation.min.js></script>
+<script src=/node_modules/jquery.mb.YTPlayer-master/dist/jquery.mb.YTPlayer.min.js></script>
+<script src=/node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js></script>
+<script src=/node_modules/wowjs/dist/wow.min.js></script>
+<script>var wow=new WOW({offset:-10,mobile:false});var smoothScroll=new SmoothScroll('a[href*="#"]',{speed:1000,easing:"easeInOutQuart"});$(document).ready(function(){$("p").addClass("wow fadeInUp");$("h6").addClass("wow fadeInUp");$("h5").addClass("wow fadeInUp");$("h4").addClass("wow fadeInUp");$("h3").addClass("wow fadeInUp");$("h2").addClass("wow fadeInUp");$("h1").addClass("wow fadeInUp");$("button").addClass("wow fadeInUp");$("form").addClass("wow fadeIn");$("img").addClass("wow fadeIn");wow.init();$("#tryout").YTPlayer();});$(document).on("blur","[data-validator]",function(){new Validator($(this),{language:{required:"Éste campo es requerido.",email:"Ingresa un correo válido.",}});if($("#nombre").hasClass("is-valid")&&$("#_replyto").hasClass("is-valid")&&$("#titulo-puesto").hasClass("is-valid")){$("#submit").removeAttr("disabled","disabled");}});</script></body></html>
