@@ -1,0 +1,50 @@
+/* Fonts
+*
+-----------------------*/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+*:not(i){
+    font-family: 'Lato', sans-serif;
+}
+
+$fontType: p, h6, h5, h4, h3, h2, h1;
+
+$modularscale: (
+    base: 1rem,
+    ratio: $major-third
+);
+
+@for $i from 1 through 7{
+    #{ nth($fontType, $i) }{
+        font-size: ms($i);
+        @if $i == 1 {
+            color: $racam-gray;
+            &.lead{
+                font-size: ms($i+1);
+            }
+        }
+        @if $i > 1 {
+            color: $racam-blue;
+            font-weight: 700;
+        }
+    }
+}
+
+.blue-dark-text{
+    color: $racam-blue-dark;
+}
+.blue-text{
+    color: $racam-blue;
+}
+.gray-text{
+    color: $racam-gray;
+}
+.white-text{
+    color: white;
+}
+.black-text{
+    color: black;
+}
+.light-text{
+    font-weight: 300;
+}
